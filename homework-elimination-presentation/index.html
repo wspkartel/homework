@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End Homework: A Case for Student Liberation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+        
+        <!-- Slide Counter -->
+        <div class="slide-counter">
+            <span id="currentSlide">1</span> / <span id="totalSlides">10</span>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="nav-controls">
+            <button class="nav-btn" id="prevBtn">‹</button>
+            <button class="nav-btn" id="nextBtn">›</button>
+        </div>
+
+        <!-- Slides Container -->
+        <div class="slides-container" id="slidesContainer">
+            
+            <!-- Slide 1: Title -->
+            <div class="slide active" data-slide="1">
+                <div class="slide-content title-slide">
+                    <h1 class="title-main">END HOMEWORK</h1>
+                    <h2 class="title-sub">Liberating Students from Academic Burden</h2>
+                    <p class="title-hook">Every night, millions of students sacrifice sleep, family time, and childhood for assignments that research proves are ineffective.</p>
+                    <div class="title-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">56%</span>
+                            <span class="stat-label">of students report homework stress</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">70%</span>
+                            <span class="stat-label">suffer sleep deprivation</span>
+                        </div>
+                    </div>
+                    <button class="btn btn--primary start-btn" id="startBtn">Start Presentation</button>
+                </div>
+            </div>
+
+            <!-- Slide 2: Problem Statement -->
+            <div class="slide" data-slide="2">
+                <div class="slide-content">
+                    <h2 class="slide-title problem-title">THE HOMEWORK CRISIS</h2>
+                    <div class="problem-grid">
+                        <div class="problem-card stress">
+                            <h3>Mental Health Crisis</h3>
+                            <div class="stat-large">65%</div>
+                            <p>Students experiencing anxiety</p>
+                        </div>
+                        <div class="problem-card sleep">
+                            <h3>Sleep Deprivation Epidemic</h3>
+                            <div class="stat-large">70%</div>
+                            <p>Students not getting adequate sleep</p>
+                        </div>
+                        <div class="problem-card health">
+                            <h3>Physical Health Impact</h3>
+                            <div class="stat-large">45%</div>
+                            <p>Report stress-related health problems</p>
+                        </div>
+                    </div>
+                    <p class="slide-quote">"Homework has become a source of family conflict and student distress rather than learning enhancement."</p>
+                </div>
+            </div>
+
+            <!-- Slide 3: Research Evidence -->
+            <div class="slide" data-slide="3">
+                <div class="slide-content">
+                    <h2 class="slide-title">RESEARCH SPEAKS VOLUMES</h2>
+                    <div class="research-section">
+                        <div class="chart-container">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1749401803/pplx_code_interpreter/35cf20af_isrxzy.jpg" alt="Homework Impact Statistics" />
+                        </div>
+                        <div class="research-facts">
+                            <div class="fact-item">
+                                <div class="fact-number">4,317</div>
+                                <div class="fact-text">Students studied by Stanford University</div>
+                            </div>
+                            <div class="fact-item">
+                                <div class="fact-number">52%</div>
+                                <div class="fact-text">Show signs of depression linked to homework stress</div>
+                            </div>
+                            <div class="fact-item">
+                                <div class="fact-number">0</div>
+                                <div class="fact-text">Correlation between homework and achievement in K-6</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="source">Source: Stanford Study, Sleep Health Journal, American Psychological Association</p>
+                </div>
+            </div>
+
+            <!-- Slide 4: International Comparison -->
+            <div class="slide" data-slide="4">
+                <div class="slide-content">
+                    <h2 class="slide-title">FINLAND: PROOF OF SUCCESS</h2>
+                    <div class="comparison-container">
+                        <div class="country-comparison">
+                            <div class="country finland">
+                                <h3>🇫🇮 Finland</h3>
+                                <div class="country-stats">
+                                    <div class="stat">
+                                        <span class="number">3</span>
+                                        <span class="label">hours homework/week</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="number">#4</span>
+                                        <span class="label">global reading rank</span>
+                                    </div>
+                                    <div class="stat success">
+                                        <span class="number">93%</span>
+                                        <span class="label">graduation rate</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vs">VS</div>
+                            <div class="country usa">
+                                <h3>🇺🇸 United States</h3>
+                                <div class="country-stats">
+                                    <div class="stat">
+                                        <span class="number">15</span>
+                                        <span class="label">hours homework/week</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="number">#15</span>
+                                        <span class="label">global reading rank</span>
+                                    </div>
+                                    <div class="stat warning">
+                                        <span class="number">75%</span>
+                                        <span class="label">graduation rate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="slide-quote">"Finland achieves superior academic outcomes with 5x less homework than the United States."</p>
+                </div>
+            </div>
+
+            <!-- Slide 5: Educational Equity -->
+            <div class="slide" data-slide="5">
+                <div class="slide-content">
+                    <h2 class="slide-title">HOMEWORK CREATES INEQUALITY</h2>
+                    <div class="equity-issues">
+                        <div class="equity-card">
+                            <div class="equity-icon">💰</div>
+                            <h3>Wealthy Families</h3>
+                            <ul>
+                                <li>Access to tutors and resources</li>
+                                <li>Dedicated study spaces</li>
+                                <li>Parent availability for help</li>
+                                <li>Educational support systems</li>
+                            </ul>
+                        </div>
+                        <div class="vs-equity">≠</div>
+                        <div class="equity-card disadvantaged">
+                            <div class="equity-icon">⚠️</div>
+                            <h3>Low-Income Families</h3>
+                            <ul>
+                                <li>Students work after school</li>
+                                <li>Limited parent education/time</li>
+                                <li>No quiet study spaces</li>
+                                <li>Competing family responsibilities</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equity-impact">
+                        <p class="impact-text">Homework grades reflect parent involvement and family resources, not student ability or effort.</p>
+                        <p class="impact-conclusion">This perpetuates educational inequality and punishes students for circumstances beyond their control.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Academic Benefits Analysis -->
+            <div class="slide" data-slide="6">
+                <div class="slide-content">
+                    <h2 class="slide-title">MINIMAL GAINS, MASSIVE COSTS</h2>
+                    <div class="benefits-analysis">
+                        <div class="analysis-section">
+                            <h3>Academic "Benefits" Plateau</h3>
+                            <div class="plateau-data">
+                                <div class="plateau-item">
+                                    <span class="grade">K-6</span>
+                                    <span class="benefit">NO correlation with achievement</span>
+                                </div>
+                                <div class="plateau-item">
+                                    <span class="grade">Middle School</span>
+                                    <span class="benefit">Benefits plateau at 90 minutes</span>
+                                </div>
+                                <div class="plateau-item">
+                                    <span class="grade">High School</span>
+                                    <span class="benefit">Benefits plateau at 2 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cost-analysis">
+                            <h3>Hidden Costs</h3>
+                            <div class="cost-grid">
+                                <div class="cost-item">
+                                    <div class="cost-icon">😰</div>
+                                    <div class="cost-text">Mental Health Crisis</div>
+                                </div>
+                                <div class="cost-item">
+                                    <div class="cost-icon">👨‍👩‍👧‍👦</div>
+                                    <div class="cost-text">Family Conflict</div>
+                                </div>
+                                <div class="cost-item">
+                                    <div class="cost-icon">⚖️</div>
+                                    <div class="cost-text">Educational Inequality</div>
+                                </div>
+                                <div class="cost-item">
+                                    <div class="cost-icon">😴</div>
+                                    <div class="cost-text">Sleep Deprivation</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="analysis-conclusion">The minimal academic benefits cannot justify the enormous social and psychological costs.</p>
+                </div>
+            </div>
+
+            <!-- Slide 7: Counterarguments & Rebuttals -->
+            <div class="slide" data-slide="7">
+                <div class="slide-content">
+                    <h2 class="slide-title">ADDRESSING THE OPPOSITION</h2>
+                    <div class="counterarguments">
+                        <div class="argument-pair">
+                            <div class="counter">
+                                <h4>"Homework teaches responsibility"</h4>
+                                <p class="counter-text">Traditional argument for homework</p>
+                            </div>
+                            <div class="rebuttal">
+                                <h4>Reality Check</h4>
+                                <p>Responsibility comes from meaningful choices, not forced busywork. Students learn better responsibility through extracurriculars, jobs, and family obligations.</p>
+                            </div>
+                        </div>
+                        <div class="argument-pair">
+                            <div class="counter">
+                                <h4>"Students need practice"</h4>
+                                <p class="counter-text">Practice makes perfect mentality</p>
+                            </div>
+                            <div class="rebuttal">
+                                <h4>Quality over Quantity</h4>
+                                <p>Effective practice happens during school hours with teacher guidance. Homework often reinforces mistakes without correction.</p>
+                            </div>
+                        </div>
+                        <div class="argument-pair">
+                            <div class="counter">
+                                <h4>"Parents want to be involved"</h4>
+                                <p class="counter-text">Family engagement argument</p>
+                            </div>
+                            <div class="rebuttal">
+                                <h4>Better Engagement Options</h4>
+                                <p>Families can engage through reading together, discussing school experiences, and supporting interests—not through homework battles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 8: Benefits of Elimination -->
+            <div class="slide" data-slide="8">
+                <div class="slide-content">
+                    <h2 class="slide-title">UNLOCKING STUDENT POTENTIAL</h2>
+                    <div class="benefits-container">
+                        <div class="benefit-category">
+                            <h3>Physical Wellbeing</h3>
+                            <div class="benefit-items">
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">😴</span>
+                                    <span class="benefit-text">8+ hours of sleep nightly</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">🏃‍♀️</span>
+                                    <span class="benefit-text">Time for physical activity</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">🧘‍♂️</span>
+                                    <span class="benefit-text">Stress reduction</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefit-category">
+                            <h3>Mental & Social Health</h3>
+                            <div class="benefit-items">
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">💚</span>
+                                    <span class="benefit-text">Mental health improvement</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">👥</span>
+                                    <span class="benefit-text">Social development</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">👨‍👩‍👧‍👦</span>
+                                    <span class="benefit-text">Quality family bonding time</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="benefit-category">
+                            <h3>Personal Growth</h3>
+                            <div class="benefit-items">
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">🎨</span>
+                                    <span class="benefit-text">Creative pursuits</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">📚</span>
+                                    <span class="benefit-text">Self-directed learning</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <span class="benefit-icon">🌟</span>
+                                    <span class="benefit-text">Pursuit of passions</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="benefits-quote">"When students are freed from homework, they rediscover the joy of learning and the richness of childhood."</p>
+                </div>
+            </div>
+
+            <!-- Slide 9: Call to Action -->
+            <div class="slide" data-slide="9">
+                <div class="slide-content call-to-action">
+                    <h2 class="slide-title action-title">THE TIME FOR CHANGE IS NOW</h2>
+                    <div class="action-content">
+                        <div class="urgency-statement">
+                            <p class="urgency-text">Every day we delay, more students suffer needlessly. The evidence is overwhelming, the solution is clear.</p>
+                        </div>
+                        <div class="action-steps">
+                            <h3>Take Action Today:</h3>
+                            <div class="action-grid">
+                                <div class="action-item">
+                                    <div class="action-number">1</div>
+                                    <div class="action-desc">Contact your school board representatives</div>
+                                </div>
+                                <div class="action-item">
+                                    <div class="action-number">2</div>
+                                    <div class="action-desc">Share this presentation with other parents</div>
+                                </div>
+                                <div class="action-item">
+                                    <div class="action-number">3</div>
+                                    <div class="action-desc">Advocate for homework-free pilot programs</div>
+                                </div>
+                                <div class="action-item">
+                                    <div class="action-number">4</div>
+                                    <div class="action-desc">Support research-based educational policies</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-vision">
+                            <p class="vision-text">Imagine schools where students thrive, families connect, and learning happens joyfully. This future is possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 10: Conclusion -->
+            <div class="slide" data-slide="10">
+                <div class="slide-content conclusion">
+                    <h2 class="slide-title conclusion-title">LIBERATE OUR STUDENTS</h2>
+                    <div class="conclusion-content">
+                        <div class="conclusion-stats">
+                            <div class="final-stat">
+                                <span class="stat-big">4,317</span>
+                                <span class="stat-desc">Students proved homework hurts more than helps</span>
+                            </div>
+                            <div class="final-stat">
+                                <span class="stat-big">Finland</span>
+                                <span class="stat-desc">Shows us a better way forward</span>
+                            </div>
+                            <div class="final-stat">
+                                <span class="stat-big">∞</span>
+                                <span class="stat-desc">Potential unlocked when students are free to grow</span>
+                            </div>
+                        </div>
+                        <div class="final-message">
+                            <p class="message-main">Homework elimination isn't just an educational reform—it's a human rights issue.</p>
+                            <p class="message-sub">Every child deserves time to be a child, to explore their interests, to sleep adequately, and to connect with family.</p>
+                            <div class="closing-statement">
+                                <p class="closing-text">The research is clear. The path is proven. The choice is ours.</p>
+                                <p class="closing-call"><strong>End homework. Unlock potential. Transform education.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
